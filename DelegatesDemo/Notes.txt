@@ -70,4 +70,17 @@ is associated with PersonHunger----->delegate object & invokation.
 
 delegate---- reference type
 Delegate-----Class
+------------------------------------------------
+
+Generic Delegates----
+Lambda Expressions----> are anonymous functions that contain expressions
+and/or a sequence of operators
+Expressions
+Parameter=>expression
+parameterlist=>expression
+
+
+Function Lambda
+Action Lambda
+Predicate Lambda
 

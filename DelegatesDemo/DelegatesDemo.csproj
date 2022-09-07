@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DelegatesDemo.AnonymousDemo</StartupObject>
+    <StartupObject>DelegatesDemo.LambdaExpressionsDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DelegatesLibrary">
@@ -52,6 +52,7 @@
     <Compile Include="AnonymousDemo.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="EventDelegatePerson.cs" />
+    <Compile Include="LambdaExpressionsDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

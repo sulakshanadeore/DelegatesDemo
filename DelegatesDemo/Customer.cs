@@ -73,8 +73,10 @@ namespace DelegatesDemo
         }
         private void UpdateMethod(Customer c)
         {
-            list.Remove(c);
-            list.Add(c);
+            Customer found=list.Find(x => x.custid ==c.custid);
+            found.custname = c.custname;
+            found.phoneno = c.phoneno;
+            
 
 
 
