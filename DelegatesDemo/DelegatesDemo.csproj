@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DelegatesDemo.customerOperations</StartupObject>
+    <StartupObject>DelegatesDemo.AnonymousDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DelegatesLibrary">
@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnonymousDemo.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="EventDelegatePerson.cs" />
     <Compile Include="Program.cs" />

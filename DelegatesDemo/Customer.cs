@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using DelegatesLibrary;
 namespace DelegatesDemo
 {
+    //delegate also called event handler
     public delegate void HandleInsertUpdateCustomer(Customer c);
+
     class customerOperations:EventArgs
     {
         public static event HandleInsertUpdateCustomer InsertEvent;
-
         public static event HandleInsertUpdateCustomer UpdateEvent;
         //Event takes a parameter Customer object
         public static List<Customer> list = new List<Customer>();
@@ -19,19 +20,25 @@ namespace DelegatesDemo
         {
             InsertEvent += CustomerOperations_InsertEvent;
             UpdateEvent += CustomerOperations_UpdateEvent;
-            Console.WriteLine("Menu 1 for Insert 2 for Update");
+        
+            Console.WriteLine("Menu 1 for Insert, 2 for Update");
             int ch = Convert.ToInt32(Console.ReadLine());
             Customer c = new Customer();
             switch (ch)
             {
                 case 1:
-                   
-                    Console.WriteLine("Enter custid");
-                    c.custid = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Enter custname");
-                    c.custname = Console.ReadLine();
-                    Console.WriteLine("Enter phone no");
-                    c.phoneno = Convert.ToInt32(Console.ReadLine());
+
+                    //Console.WriteLine("Enter custid");
+                    //c.custid = Convert.ToInt32(Console.ReadLine());
+                    //Console.WriteLine("Enter custname");
+                    //c.custname = Console.ReadLine();
+                    //Console.WriteLine("Enter phone no");
+                    //c.phoneno = Convert.ToInt32(Console.ReadLine());
+                    //static
+                    c.custid = 1;
+                    c.custname = "James";
+                    c.phoneno = 14242;
+
                     InsertEvent(c);
                     break;
                 case 2:
@@ -68,6 +75,11 @@ namespace DelegatesDemo
         {
             list.Remove(c);
             list.Add(c);
+
+
+
+
+
             Console.WriteLine("Updated successfully");
         }
 
