@@ -79,8 +79,13 @@ Expressions
 Parameter=>expression
 parameterlist=>expression
 
+<>  ---- Generic brackets
+Function Lambda---- there is return type with function lambda. and its specified in 
+the signature of the lambda expression/function.
+the keyword ----Func<> ---the parameter list includes return type.
+It is included as last parameter in the list.
 
-Function Lambda
-Action Lambda
-Predicate Lambda
+Action Lambda----- Action Lambda has void return type.
+The keyword---- Action<>
+Predicate Lambda----the return type is  bool----  and the keyword --- Predicate<>
 

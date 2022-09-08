@@ -33,13 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DelegatesDemo.LambdaExpressionsDemo</StartupObject>
+    <StartupObject>DelegatesDemo.FunctionLambdaDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DelegatesLibrary">
       <HintPath>..\DelegatesLibrary\bin\Debug\DelegatesLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,12 +53,14 @@
     <Compile Include="AnonymousDemo.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="EventDelegatePerson.cs" />
+    <Compile Include="FunctionLambdaDemo.cs" />
     <Compile Include="LambdaExpressionsDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Notes.txt" />
