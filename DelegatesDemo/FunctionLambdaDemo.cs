@@ -22,7 +22,8 @@ namespace DelegatesDemo
             Console.WriteLine("---------------------");
 
             //FunctionLambdaDemo Lambda
-            Func<double,double> fun1=(i)=> Math.Sqrt(i);
+            //public delegate double SquareRoot(double number);
+        Func<double,double> fun1=(i)=> Math.Sqrt(i);
             double ans=fun1(100);
 
 
@@ -92,7 +93,25 @@ namespace DelegatesDemo
 
 
 
-            Console.WriteLine();
+            Console.WriteLine("-------------------");
+            Predicate<Tuple<string, string>> tuplePredicate = (v1) =>
+            {
+                bool status = false;
+                if (v1.Item1 != "" && v1.Item1 == "bac" && v1.Item2!="" && v1.Item2=="abc@123")
+                {
+                    Console.WriteLine("U are logged in successfully");
+                    status = true;
+                }
+                else
+                {
+                    Console.WriteLine("Pls check userid/pwd");
+                 }
+                return status;
+            };
+            var data = Tuple.Create<string, string>("bac", "abc@123");
+              bool userans=tuplePredicate(data);
+            Console.WriteLine("USe of Tuples");
+            Console.WriteLine(userans);
 
 
 
