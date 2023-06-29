@@ -8,10 +8,12 @@ namespace DelegatesDemo
 {
     //This is a event demo 
     //one more change
+    
     class EventDelegatePerson
     {
         static void Main(string[] args)
         {
+            //Error here
             Person p = new Person();
             p.Walk(100);
 
