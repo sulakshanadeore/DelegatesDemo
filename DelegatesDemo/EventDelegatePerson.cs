@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DelegatesLibrary;
 namespace DelegatesDemo
 {
+    //This is a event demo
     class EventDelegatePerson
     {
         static void Main(string[] args)
